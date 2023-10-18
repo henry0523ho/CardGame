@@ -37,10 +37,11 @@ body {
   margin: auto;
   background-image: url('src/wood.jpg');
   background-size:contain;
+  padding: 5vh 10px;
 }
 #cardsTable {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   text-align: center;
 }
 
