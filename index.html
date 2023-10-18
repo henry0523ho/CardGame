@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link href="style.css" rel="stylesheet" />
+    <script src="main.js"></script>
+
+    <link href="src/1.png" rel="prefetch" as="image" />
+    <link href="src/2.png" rel="prefetch" as="image" />
+    <link href="src/3.png" rel="prefetch" as="image" />
+    <link href="src/4.png" rel="prefetch" as="image" />
+    <link href="src/5.png" rel="prefetch" as="image" />
+    <link href="src/6.png" rel="prefetch" as="image" />
+    <link href="src/7.png" rel="prefetch" as="image" />
+    <link href="src/8.png" rel="prefetch" as="image" />
+    <link href="src/9.png" rel="prefetch" as="image" />
+    <link href="src/10.png" rel="prefetch" as="image" />
+    <link href="src/CardBack_skim.png" rel="prefetch" as="image" />
+  </head>
+  <body>
+    <div class="start-game">
+      <div id="start-pannel">
+        <h1 id="start-h1">守護岩記憶大挑戰</h1>
+        <p>每次翻開兩張卡片，嘗試找到相同的守護岩。</p>
+        <img style="width: 100%; height: auto;" src="src/1.png" alt="" />
+        <button id="startBtn" type="button" class="btn btn-primary btn-lg">開始遊戲</button>
+      </div>
+    </div>
+    <div class="main-game">
+      <div id="cards">
+        <table id="cardsTable">
+          <tbody>
+            <tr>
+              <td>
+                <div id="card01" class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        class="card-photo-back"
+                        src="src/CardBack_skim.png"
+                      />
+                    </div>
+                    <div class="flip-card-back">
+                      <img class="card-photo-back" src="src/1.png" />
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div id="card02" class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        class="card-photo-back"
+                        src="src/CardBack_skim.png"
+                      />
+                    </div>
+                    <div class="flip-card-back">
+                      <img class="card-photo-back" src="src/1.png" />
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div id="card03" class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        class="card-photo-back"
+                        src="src/CardBack_skim.png"
+                      />
+                    </div>
+                    <div class="flip-card-back">
+                      <img class="card-photo-back" src="src/1.png" />
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div id="card04" class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        class="card-photo-back"
+                        src="src/CardBack_skim.png"
+                      />
+                    </div>
+                    <div class="flip-card-back">
+                      <img class="card-photo-back" src="src/1.png" />
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div id="card05" class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        class="card-photo-back"
+                        src="src/CardBack_skim.png"
+                      />
+                    </div>
+                    <div class="flip-card-back">
+                      <img class="card-photo-back" src="src/1.png" />
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div id="card06" class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        class="card-photo-back"
+                        src="src/CardBack_skim.png"
+                      />
+                    </div>
+                    <div class="flip-card-back">
+                      <img class="card-photo-back" src="src/1.png" />
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div id="card07" class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        class="card-photo-back"
+                        src="src/CardBack_skim.png"
+                      />
+                    </div>
+                    <div class="flip-card-back">
+                      <img class="card-photo-back" src="src/1.png" />
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div id="card08" class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        class="card-photo-back"
+                        src="src/CardBack_skim.png"
+                      />
+                    </div>
+                    <div class="flip-card-back">
+                      <img class="card-photo-back" src="src/1.png" />
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div id="card09" class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        class="card-photo-back"
+                        src="src/CardBack_skim.png"
+                      />
+                    </div>
+                    <div class="flip-card-back">
+                      <img class="card-photo-back" src="src/1.png" />
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div id="card10" class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        class="card-photo-back"
+                        src="src/CardBack_skim.png"
+                      />
+                    </div>
+                    <div class="flip-card-back">
+                      <img class="card-photo-back" src="src/1.png" />
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div id="card11" class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        class="card-photo-back"
+                        src="src/CardBack_skim.png"
+                      />
+                    </div>
+                    <div class="flip-card-back">
+                      <img class="card-photo-back" src="src/1.png" />
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div id="card12" class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        class="card-photo-back"
+                        src="src/CardBack_skim.png"
+                      />
+                    </div>
+                    <div class="flip-card-back">
+                      <img class="card-photo-back" src="src/1.png" />
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div id="card13" class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        class="card-photo-back"
+                        src="src/CardBack_skim.png"
+                      />
+                    </div>
+                    <div class="flip-card-back">
+                      <img class="card-photo-back" src="src/1.png" />
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div id="card14" class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        class="card-photo-back"
+                        src="src/CardBack_skim.png"
+                      />
+                    </div>
+                    <div class="flip-card-back">
+                      <img class="card-photo-back" src="src/1.png" />
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div id="card15" class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        class="card-photo-back"
+                        src="src/CardBack_skim.png"
+                      />
+                    </div>
+                    <div class="flip-card-back">
+                      <img class="card-photo-back" src="src/1.png" />
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div id="card16" class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        class="card-photo-back"
+                        src="src/CardBack_skim.png"
+                      />
+                    </div>
+                    <div class="flip-card-back">
+                      <img class="card-photo-back" src="src/1.png" />
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div id="card17" class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        class="card-photo-back"
+                        src="src/CardBack_skim.png"
+                      />
+                    </div>
+                    <div class="flip-card-back">
+                      <img class="card-photo-back" src="src/1.png" />
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div id="card18" class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        class="card-photo-back"
+                        src="src/CardBack_skim.png"
+                      />
+                    </div>
+                    <div class="flip-card-back">
+                      <img class="card-photo-back" src="src/1.png" />
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div id="card19" class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        class="card-photo-back"
+                        src="src/CardBack_skim.png"
+                      />
+                    </div>
+                    <div class="flip-card-back">
+                      <img class="card-photo-back" src="src/1.png" />
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div id="card20" class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        class="card-photo-back"
+                        src="src/CardBack_skim.png"
+                      />
+                    </div>
+                    <div class="flip-card-back">
+                      <img class="card-photo-back" src="src/1.png" />
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="finish-game"><canvas id="canvas"></canvas>
+      <div id="end-pannel">
+
+        <h1 id="finish-h1">挑戰成功</h1>
+        <button id="againBtn" type="button" class="btn btn-primary btn-lg">再玩一次</button>
+      </div>
+    </div>
+    <div id="blocker"></div>
+    <audio id="bgm">
+      <source src="src/bgm.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="flip">
+      <source src="src/flip.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="score">
+      <source src="src/score.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="done">
+      <source src="src/done.mp3" type="audio/mpeg">
+    </audio>
+  </body>
+</html>
+
+<!-- <div id="card0" class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="card-photo-back" src="src/CardBack_skim.png" />
+    </div>
+    <div class="flip-card-back">
+      <img class="card-photo-back" src="src/1.png" />
+    </div>
+  </div>
+</div> -->
