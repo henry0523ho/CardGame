@@ -161,7 +161,7 @@ body {
 #end-pannel{
     position: absolute;
     width: 100vw;
-    height: 20vh;
+    height: 30vh;
     margin:45vh 0vw;
     z-index: 10;
     background-color: rgba(255, 207, 207, 0.3);

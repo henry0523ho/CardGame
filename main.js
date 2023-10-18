@@ -64,7 +64,7 @@ $(document).ready(function () {
       $(`#card${cardNumber}`)
         .find(".flip-card-inner")
         .toggleClass("flip-card-active");
-      block(3000, () => {
+      block(1000, () => {
         if (
           cardVal[Number(openCards[0]) - 1] == cardVal[Number(openCards[1]) - 1]
         ) {
