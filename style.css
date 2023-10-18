@@ -1,3 +1,8 @@
+@font-face {
+    font-family: nanifont;
+    src: url(https://cdn.jsdelivr.net/gh/max32002/nanifont@1.036/webfont/NaniFont-Regular.woff2) format("woff2")
+    , url(https://cdn.jsdelivr.net/gh/max32002/nanifont@1.036/webfont/NaniFont-Regular.woff) format("woff");
+  }
 body {
   margin: 0;
   padding: 0;
@@ -61,13 +66,16 @@ body {
     color: white;
     font-weight: bolder;
     margin: 2vh 0vw;
+    font-family: nanifont;
 }
 
 #start-h1{
     font-size: xx-large;
+    font-family: nanifont;
     color: rgb(0, 0, 0);
     font-weight: bolder;
     margin: 2vh 0vw;
+    text-shadow: 3px 3px 3px rgba(237, 102, 255, 0.5);
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -157,6 +165,7 @@ body {
     animation: jump 0.2s infinite alternate;
     position: static;
     bottom: 5vh;
+    margin: 5px;
 }
 #end-pannel{
     position: absolute;
