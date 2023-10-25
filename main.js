@@ -36,7 +36,7 @@ $(document).ready(function () {
     const cardElement = $(`#${cardId}`);
     const flipCardBack = cardElement.find(".flip-card-back");
     const cardPhotoBack = flipCardBack.find(".card-photo-back");
-    cardPhotoBack.attr("src", `src/${cardVal[i]}.png`);
+    cardPhotoBack.attr("src", `src/${cardVal[i]}.webp`);
   }
   done = 20;
 });

@@ -1,5 +1,8 @@
 @font-face {
     font-family: nanifont;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: xx-large;
     src: url(https://cdn.jsdelivr.net/gh/max32002/nanifont@1.036/webfont/NaniFont-Regular.woff2) format("woff2")
     , url(https://cdn.jsdelivr.net/gh/max32002/nanifont@1.036/webfont/NaniFont-Regular.woff) format("woff");
   }
@@ -7,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   /* background-color: rgb(0, 141, 7); */
-  background-image: url('src/cloth.jpeg');
+  background-image: url('src/cloth.webp');
   /* background-size: cover; */
   background-position: -20px;
   overflow: hidden;
@@ -35,7 +38,7 @@ body {
   width: 100vw;
   height: 100vh;
   margin: auto;
-  background-image: url('src/wood.jpg');
+  background-image: url('src/wood-min.webp');
   background-size:contain;
   padding: 5vh 10px;
 }

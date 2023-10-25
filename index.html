@@ -19,26 +19,47 @@
     <link href="style.css" rel="stylesheet" />
     <script src="main.js"></script>
 
-    <link href="src/1.png" rel="prefetch" as="image" />
-    <link href="src/2.png" rel="prefetch" as="image" />
-    <link href="src/3.png" rel="prefetch" as="image" />
-    <link href="src/4.png" rel="prefetch" as="image" />
-    <link href="src/5.png" rel="prefetch" as="image" />
-    <link href="src/6.png" rel="prefetch" as="image" />
-    <link href="src/7.png" rel="prefetch" as="image" />
-    <link href="src/8.png" rel="prefetch" as="image" />
-    <link href="src/9.png" rel="prefetch" as="image" />
-    <link href="src/10.png" rel="prefetch" as="image" />
-    <link href="src/CardBack_skim.png" rel="prefetch" as="image" />
+    <link rel=”preload” href=”https://cdn.jsdelivr.net/gh/max32002/nanifont@1.036/webfont/NaniFont-Regular.woff2″ as=”font” type=”font/woff2″ crossorigin>
+    <link href="src/cloth.webp" rel="preload" as="image" />
+    <link href="src/wood-min.webp" rel="preload" as="image" />
+    <link href="src/1.webp" rel="preload" as="image" />
+    <link href="src/2.webp" rel="preload" as="image" />
+    <link href="src/3.webp" rel="preload" as="image" />
+    <link href="src/4.webp" rel="preload" as="image" />
+    <link href="src/5.webp" rel="preload" as="image" />
+    <link href="src/6.webp" rel="preload" as="image" />
+    <link href="src/7.webp" rel="preload" as="image" />
+    <link href="src/8.webp" rel="preload" as="image" />
+    <link href="src/9.webp" rel="preload" as="image" />
+    <link href="src/10.webp" rel="preload" as="image" />
+    <link href="src/CardBack_skim.webp" rel="preload" as="image" />
+    <link href="src/info2.webp" rel="preload" as="image" />
+    <!-- <link href="src/bgm-min.mp3" rel="preload" as="audio" />
+    <link href="src/flip-min.mp3" rel="preload" as="audio" />
+    <link href="src/score-min.mp3" rel="preload" as="audio" />
+    <link href="src/done-min.mp3" rel="preload" as="audio" /> -->
+
   </head>
   <body>
+    <audio id="bgm" preload="auto">
+      <source src="src/bgm-min.ogg" type="audio/ogg">
+    </audio>
+    <audio id="flip" preload="auto">
+      <source src="src/flip-min.ogg" type="audio/ogg">
+    </audio>
+    <audio id="score" preload="auto">
+      <source src="src/score-min.ogg" type="audio/ogg">
+    </audio>
+    <audio id="done" preload="auto">
+      <source src="src/done-min.ogg" type="audio/ogg">
+    </audio>
     <div class="start-game">
       <div id="start-pannel">
         <h1 id="start-h1">守護岩記憶大挑戰</h1>
         <p>每次翻開兩張卡片，嘗試找到相同的守護岩。</p>
-        <!-- <img style="margin: 5px; max-width: 90vw; height: auto; max-height: 25vh;" src="src/info.png" alt="" />
+        <!-- <img style="margin: 5px; max-width: 90vw; height: auto; max-height: 25vh;" src="src/info.webp" alt="" />
         <br> -->
-        <img style="border: 2px solid black;border-radius: 2px; margin: 5px; max-width: 90vw; height: auto; max-height: 25vh;" src="src/info2.png" alt="" />
+        <img style="border: 2px solid black;border-radius: 2px; margin: 5px; max-width: 90vw; height: auto; max-height: 25vh;" src="src/info2.webp" alt="" />
         
         <br><button id="startBtn" type="button" class="btn btn-primary btn-lg">開始遊戲</button>
       </div>
@@ -54,11 +75,11 @@
                     <div class="flip-card-front">
                       <img
                         class="card-photo-back"
-                        src="src/CardBack_skim.png"
+                        src="src/CardBack_skim.webp"
                       />
                     </div>
                     <div class="flip-card-back">
-                      <img class="card-photo-back" src="src/1.png" />
+                      <img class="card-photo-back" src="src/1.webp" />
                     </div>
                   </div>
                 </div>
@@ -69,11 +90,11 @@
                     <div class="flip-card-front">
                       <img
                         class="card-photo-back"
-                        src="src/CardBack_skim.png"
+                        src="src/CardBack_skim.webp"
                       />
                     </div>
                     <div class="flip-card-back">
-                      <img class="card-photo-back" src="src/1.png" />
+                      <img class="card-photo-back" src="src/1.webp" />
                     </div>
                   </div>
                 </div>
@@ -84,11 +105,11 @@
                     <div class="flip-card-front">
                       <img
                         class="card-photo-back"
-                        src="src/CardBack_skim.png"
+                        src="src/CardBack_skim.webp"
                       />
                     </div>
                     <div class="flip-card-back">
-                      <img class="card-photo-back" src="src/1.png" />
+                      <img class="card-photo-back" src="src/1.webp" />
                     </div>
                   </div>
                 </div>
@@ -99,11 +120,11 @@
                     <div class="flip-card-front">
                       <img
                         class="card-photo-back"
-                        src="src/CardBack_skim.png"
+                        src="src/CardBack_skim.webp"
                       />
                     </div>
                     <div class="flip-card-back">
-                      <img class="card-photo-back" src="src/1.png" />
+                      <img class="card-photo-back" src="src/1.webp" />
                     </div>
                   </div>
                 </div>
@@ -116,11 +137,11 @@
                     <div class="flip-card-front">
                       <img
                         class="card-photo-back"
-                        src="src/CardBack_skim.png"
+                        src="src/CardBack_skim.webp"
                       />
                     </div>
                     <div class="flip-card-back">
-                      <img class="card-photo-back" src="src/1.png" />
+                      <img class="card-photo-back" src="src/1.webp" />
                     </div>
                   </div>
                 </div>
@@ -131,11 +152,11 @@
                     <div class="flip-card-front">
                       <img
                         class="card-photo-back"
-                        src="src/CardBack_skim.png"
+                        src="src/CardBack_skim.webp"
                       />
                     </div>
                     <div class="flip-card-back">
-                      <img class="card-photo-back" src="src/1.png" />
+                      <img class="card-photo-back" src="src/1.webp" />
                     </div>
                   </div>
                 </div>
@@ -146,11 +167,11 @@
                     <div class="flip-card-front">
                       <img
                         class="card-photo-back"
-                        src="src/CardBack_skim.png"
+                        src="src/CardBack_skim.webp"
                       />
                     </div>
                     <div class="flip-card-back">
-                      <img class="card-photo-back" src="src/1.png" />
+                      <img class="card-photo-back" src="src/1.webp" />
                     </div>
                   </div>
                 </div>
@@ -161,11 +182,11 @@
                     <div class="flip-card-front">
                       <img
                         class="card-photo-back"
-                        src="src/CardBack_skim.png"
+                        src="src/CardBack_skim.webp"
                       />
                     </div>
                     <div class="flip-card-back">
-                      <img class="card-photo-back" src="src/1.png" />
+                      <img class="card-photo-back" src="src/1.webp" />
                     </div>
                   </div>
                 </div>
@@ -178,11 +199,11 @@
                     <div class="flip-card-front">
                       <img
                         class="card-photo-back"
-                        src="src/CardBack_skim.png"
+                        src="src/CardBack_skim.webp"
                       />
                     </div>
                     <div class="flip-card-back">
-                      <img class="card-photo-back" src="src/1.png" />
+                      <img class="card-photo-back" src="src/1.webp" />
                     </div>
                   </div>
                 </div>
@@ -193,11 +214,11 @@
                     <div class="flip-card-front">
                       <img
                         class="card-photo-back"
-                        src="src/CardBack_skim.png"
+                        src="src/CardBack_skim.webp"
                       />
                     </div>
                     <div class="flip-card-back">
-                      <img class="card-photo-back" src="src/1.png" />
+                      <img class="card-photo-back" src="src/1.webp" />
                     </div>
                   </div>
                 </div>
@@ -208,11 +229,11 @@
                     <div class="flip-card-front">
                       <img
                         class="card-photo-back"
-                        src="src/CardBack_skim.png"
+                        src="src/CardBack_skim.webp"
                       />
                     </div>
                     <div class="flip-card-back">
-                      <img class="card-photo-back" src="src/1.png" />
+                      <img class="card-photo-back" src="src/1.webp" />
                     </div>
                   </div>
                 </div>
@@ -223,11 +244,11 @@
                     <div class="flip-card-front">
                       <img
                         class="card-photo-back"
-                        src="src/CardBack_skim.png"
+                        src="src/CardBack_skim.webp"
                       />
                     </div>
                     <div class="flip-card-back">
-                      <img class="card-photo-back" src="src/1.png" />
+                      <img class="card-photo-back" src="src/1.webp" />
                     </div>
                   </div>
                 </div>
@@ -240,11 +261,11 @@
                     <div class="flip-card-front">
                       <img
                         class="card-photo-back"
-                        src="src/CardBack_skim.png"
+                        src="src/CardBack_skim.webp"
                       />
                     </div>
                     <div class="flip-card-back">
-                      <img class="card-photo-back" src="src/1.png" />
+                      <img class="card-photo-back" src="src/1.webp" />
                     </div>
                   </div>
                 </div>
@@ -255,11 +276,11 @@
                     <div class="flip-card-front">
                       <img
                         class="card-photo-back"
-                        src="src/CardBack_skim.png"
+                        src="src/CardBack_skim.webp"
                       />
                     </div>
                     <div class="flip-card-back">
-                      <img class="card-photo-back" src="src/1.png" />
+                      <img class="card-photo-back" src="src/1.webp" />
                     </div>
                   </div>
                 </div>
@@ -270,11 +291,11 @@
                     <div class="flip-card-front">
                       <img
                         class="card-photo-back"
-                        src="src/CardBack_skim.png"
+                        src="src/CardBack_skim.webp"
                       />
                     </div>
                     <div class="flip-card-back">
-                      <img class="card-photo-back" src="src/1.png" />
+                      <img class="card-photo-back" src="src/1.webp" />
                     </div>
                   </div>
                 </div>
@@ -285,11 +306,11 @@
                     <div class="flip-card-front">
                       <img
                         class="card-photo-back"
-                        src="src/CardBack_skim.png"
+                        src="src/CardBack_skim.webp"
                       />
                     </div>
                     <div class="flip-card-back">
-                      <img class="card-photo-back" src="src/1.png" />
+                      <img class="card-photo-back" src="src/1.webp" />
                     </div>
                   </div>
                 </div>
@@ -302,11 +323,11 @@
                     <div class="flip-card-front">
                       <img
                         class="card-photo-back"
-                        src="src/CardBack_skim.png"
+                        src="src/CardBack_skim.webp"
                       />
                     </div>
                     <div class="flip-card-back">
-                      <img class="card-photo-back" src="src/1.png" />
+                      <img class="card-photo-back" src="src/1.webp" />
                     </div>
                   </div>
                 </div>
@@ -317,11 +338,11 @@
                     <div class="flip-card-front">
                       <img
                         class="card-photo-back"
-                        src="src/CardBack_skim.png"
+                        src="src/CardBack_skim.webp"
                       />
                     </div>
                     <div class="flip-card-back">
-                      <img class="card-photo-back" src="src/1.png" />
+                      <img class="card-photo-back" src="src/1.webp" />
                     </div>
                   </div>
                 </div>
@@ -332,11 +353,11 @@
                     <div class="flip-card-front">
                       <img
                         class="card-photo-back"
-                        src="src/CardBack_skim.png"
+                        src="src/CardBack_skim.webp"
                       />
                     </div>
                     <div class="flip-card-back">
-                      <img class="card-photo-back" src="src/1.png" />
+                      <img class="card-photo-back" src="src/1.webp" />
                     </div>
                   </div>
                 </div>
@@ -347,11 +368,11 @@
                     <div class="flip-card-front">
                       <img
                         class="card-photo-back"
-                        src="src/CardBack_skim.png"
+                        src="src/CardBack_skim.webp"
                       />
                     </div>
                     <div class="flip-card-back">
-                      <img class="card-photo-back" src="src/1.png" />
+                      <img class="card-photo-back" src="src/1.webp" />
                     </div>
                   </div>
                 </div>
@@ -370,28 +391,17 @@
       </div>
     </div>
     <div id="blocker"></div>
-    <audio id="bgm">
-      <source src="src/bgm.mp3" type="audio/mpeg">
-    </audio>
-    <audio id="flip">
-      <source src="src/flip.mp3" type="audio/mpeg">
-    </audio>
-    <audio id="score">
-      <source src="src/score.mp3" type="audio/mpeg">
-    </audio>
-    <audio id="done">
-      <source src="src/done.mp3" type="audio/mpeg">
-    </audio>
+    
   </body>
 </html>
 
 <!-- <div id="card0" class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img class="card-photo-back" src="src/CardBack_skim.png" />
+      <img class="card-photo-back" src="src/CardBack_skim.webp" />
     </div>
     <div class="flip-card-back">
-      <img class="card-photo-back" src="src/1.png" />
+      <img class="card-photo-back" src="src/1.webp" />
     </div>
   </div>
 </div> -->
